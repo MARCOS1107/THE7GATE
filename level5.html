@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 5 - Final Choice</title>
+  <style>
+    body { background-color: #000; color: red; font-family: monospace; text-align: center; padding-top: 10%; }
+    button { margin: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>This is the end... or is it?</h1>
+  <video width="320" autoplay muted loop>
+    <source src="media/ending.mp4" type="video/mp4">
+  </video>
+  <br><br>
+  <button onclick="endGame()">END GAME</button>
+  <button onclick="continueGame()">CONTINUE</button>
+  <script>
+    function endGame() {
+      alert("Goodbye, Marcos.");
+      window.close();
+    }
+    function continueGame() {
+      alert("The GATE opens further...");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

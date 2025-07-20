@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 4 - Puzzle Chamber</title>
+  <style>
+    body { background: #000; color: #fff; font-family: monospace; text-align: center; padding: 5%; }
+    input, button { padding: 10px; font-size: 1em; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>I speak without a mouth and hear without ears. I have nobody, but I come alive with the wind. What am I?</h1>
+  <input id="puzzle" placeholder="Your answer" />
+  <button onclick="checkPuzzle()">Answer</button>
+  <p id="response"></p>
+  <script>
+    function checkPuzzle() {
+      const input = document.getElementById("puzzle").value.toLowerCase();
+      if (input.includes("echo")) {
+        window.location.href = "level5.html";
+      } else {
+        document.getElementById("response").innerText = "Incorrect... Think again.";
+      }
+    }
+  </script>
+</body>
+</html>

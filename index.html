@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The 7GATE - Level 0</title>
+  <style>
+    body { background: black; color: white; font-family: monospace; text-align: center; padding-top: 20%; }
+    h1 { font-size: 2em; }
+    button { margin-top: 20px; padding: 10px 20px; font-size: 1em; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to The 7GATE, Marcos.<br>This is not a game. This is your awakening.</h1>
+  <audio id="gateSound" src="sound/metal_gate.mp3" preload="auto"></audio>
+  <br><button onclick="enterGate()">ENTER</button>
+  <script>
+    function enterGate() {
+      document.getElementById('gateSound').play();
+      setTimeout(() => window.location.href = "level1.html", 1500);
+    }
+  </script>
+</body>
+</html>

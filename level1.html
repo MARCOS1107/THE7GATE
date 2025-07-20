@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 1 - Mind Probe</title>
+  <style>
+    body { background-color: #111; color: #0f0; font-family: monospace; text-align: center; padding-top: 10%; }
+    input, button { padding: 10px; font-size: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Decode this:</h1>
+  <p>"Guvf vf abg gur svefg yriry."</p>
+  <input id="answer" placeholder="Enter decoded text" />
+  <button onclick="checkAnswer()">Decode</button>
+  <p id="result"></p>
+  <script>
+    function checkAnswer() {
+      const ans = document.getElementById('answer').value.toLowerCase();
+      if (ans.includes("this is not the first level")) {
+        window.location.href = "level2.html";
+      } else {
+        document.getElementById("result").innerText = "Wrong answer...";
+      }
+    }
+  </script>
+</body>
+</html>

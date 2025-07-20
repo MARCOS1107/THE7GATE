@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 2 - Red Warning</title>
+  <style>
+    body { background-color: red; color: white; font-family: monospace; text-align: center; padding-top: 20%; }
+    button { padding: 10px 20px; font-size: 1em; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>WARNING: You are not supposed to be here...</h1>
+  <audio src="sound/alarm.mp3" autoplay loop></audio>
+  <br><br><button onclick="next()">Proceed</button>
+  <script>
+    function next() {
+      window.location.href = "level3.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 3 - Secret Code</title>
+  <style>
+    body { background: black; color: cyan; font-family: monospace; text-align: center; padding-top: 10%; }
+    input, button { padding: 10px; font-size: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Enter the secret code to unlock the truth:</h1>
+  <input id="code" placeholder="Enter Code" />
+  <button onclick="checkCode()">Submit</button>
+  <p id="hint"></p>
+  <script>
+    function checkCode() {
+      const code = document.getElementById("code").value;
+      if (code === "MARCOS7") {
+        window.location.href = "level4.html";
+      } else {
+        document.getElementById("hint").innerText = "Access Denied.";
+      }
+    }
+  </script>
+</body>
+</html>
